@@ -76,7 +76,9 @@
 		if(min > 0) {
 			time += min + minIndi;
 		}
-		time += sec + " sec";
+		if(sec > 0) {
+			time += sec + " sec";
+		}
 		document.getElementById("readTime").innerHTML = time;
 	}
 </script>
